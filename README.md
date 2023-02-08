@@ -13,7 +13,7 @@ d) Etsi merkkejä murtautumisyrityksistä.
 
 - Aloitin vuokraamalla oman virtuaalipalvelimen Linodelta. Rekisteröidyin sivulle, kävin vaadittavat vaiheet läpi, jonka jälkeen pääsin luomaan palvelimen. Valitsin halvimman mahdollisen version (5$/kk), jossa on 1 GB RAM:ia. Serverin sijainnin valitsin Saksaan. Alla kuva vielä luomani virtuaalipalvelimen yhteenvedosta
 
-![Add file: Virtuaalipalvelin](linode-server.png)
+![Add file: Virtuaalipalvelin](linode-server.PNG)
 
 ## b)
 
@@ -46,7 +46,7 @@ Siirryin hallinnoimaan virtuaalipalvelinta virtuaalikoneelleni komentokehotteen 
 - Asensin apache2 komennolla `` $ sudo apt-get install apache2``
 - Verkkosivuni avaa apache2 esimerkki sivun.
 
-![Add file: Verkkosivu](sivu-alku.png)
+![Add file: Verkkosivu](sivu-alku.PNG)
 
 - Laitoin micron default editoriksi .bashrc tiedostoon. Kirjoitin ``export EDITOR='micro'`` ``.bashcr`` tiedoston loppuun. 
 - Loin uuden .conf tiedoston uudelle etusivulle apache2 ``sites-available`` kansioon komennolla ``$ sudoedit /etc/apache2/sites-available/frontpage.conf``
@@ -66,6 +66,6 @@ Siirryin hallinnoimaan virtuaalipalvelinta virtuaalikoneelleni komentokehotteen 
 
 Testasin vielä toisella laitteella verkkoselaimella:
 
-![Add file: Etusivu toisella laitteella](etusivu-2.png
+![Add file: Etusivu toisella laitteella](etusivu-2.PNG)
 
 - Uusi etusivuni on nyt siis virtuaalipalvelimella kaikkien nähtävissä: http://139.144.73.215/
