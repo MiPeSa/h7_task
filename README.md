@@ -44,7 +44,7 @@ Siirryin hallinnoimaan virtuaalipalvelinta virtuaalikoneelleni komentokehotteen 
 
 - Ennen apache2 asennusta avasin reiän portille 80 komennolla ``$ sudo ufw allow 80/tcp``
 - Asensin apache2 komennolla `` $ sudo apt-get install apache2``
-- Verkkosivuni avaa apache2 esimerkki sivun.
+- Verkkosivuni avaa apache2 esimerkkisivun.
 
 ![Add file: Verkkosivu](sivu-alku.PNG)
 
