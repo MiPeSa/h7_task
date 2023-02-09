@@ -75,12 +75,21 @@ Testasin vielä toisella laitteella verkkoselaimella:
 
 ## d)
 
+Etsin merkkejä ``auth.log`` lokista murtautumisyrityksistä komennolla ``$ sudo tail -50 /var/log/auth.log``. Yllätyin, kuinka vilkasta lokissa oli. Lokista löytyi lukuisia kirjautumisyrityksiä eri IP osoitteista. Katsoin myös reaaliajassa, kun lokiin tuli kirjautumisyrityksiä komennolla ``$ sudo tail -F /var/log/auth.log``
+
+- Alla olevassa näyttökuvassa user "nathaniel" yritti epäonnistuneesti kirjautua sisään virtuaalipalvelimelle.
 ![Add file: Try](try-1.png)
 
+- Tässä tapahtumassa "root" käyttäjälle yritettiin kirjautua useita kertoja, joka johti erroriin liian monen epäonnistuneen yrityksen takia. Tämä voisi viitata mahdollisesti brute-force menetelmään? Eli hyökkäykseen, jossa yritetään järjestelmällisten yritysten avulla löytää oikea salasana. Root käyttäjän salasana on kuitenkin lukittu, joka suojaa kyseiseltä menetelmältä.
 ![Add file: Try](try-2.png)
 
+- Tässä tapahtumassa käyttäjä "abc" yritti kirjautua sisään. Epäonnistuen, sillä ei sellaista käyttäjää ole olemassa virtuaalipalvelimessani. IP osoitteesta näkee, että yrittäjä on sama, joka aikaisemmassa esimerkissä yritti sisään "nathaniel" käyttäjänimellä.
 ![Add file: Try](try-3.png)
 
+- Tässä tapahtumassa joku yritti kirjautua palvelimelle käyttäjällä "Debian"
 ![Add file: Try](try-4.png)
 
+``/var/log/apache2/access.log`` lokista löysin myös murtautumisyrityksen. Etsin lokista tietoja komennolla ``sudo tail -10 /var/log/apache2/access.log``
+
+- Tässä tapahtumassa, joku yritti IP osoitteesta ``185.246.220.98`` lähettää ``POST`` pyynnön ``/boaform/admin/formLogin`` verkkosivulleni. POST pyyntö, kuitenkin aiheutti errorin ``404``, kuten lokista näkyy. Lokista silmään tarttui myös, että pyyntö oli tehty Ubuntu käyttöjärjestelmällä Linuxilla Firefox selaimella. 
 ![Add file: Try](try-5.png)
