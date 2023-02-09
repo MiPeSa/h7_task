@@ -91,5 +91,5 @@ Etsin merkkejä ``auth.log`` lokista murtautumisyrityksistä komennolla ``$ sudo
 
 ``/var/log/apache2/access.log`` lokista löysin myös murtautumisyrityksen. Etsin lokista tietoja komennolla ``sudo tail -10 /var/log/apache2/access.log``
 
-- Tässä tapahtumassa, joku yritti IP osoitteesta ``185.246.220.98`` lähettää ``POST`` pyynnön ``/boaform/admin/formLogin`` verkkosivulleni. POST pyyntö, kuitenkin aiheutti errorin ``404``, kuten lokista näkyy. Lokista silmään tarttui myös, että pyyntö oli tehty Ubuntu käyttöjärjestelmällä Linuxilla Firefox selaimella. 
+- Tässä tapahtumassa, joku yritti IP osoitteesta ``185.246.220.98`` lähettää ``POST`` pyynnön ``/boaform/admin/formLogin`` verkkosivulleni. POST pyyntö, kuitenkin aiheutti errorin ``404``, kuten lokista näkyy. Lokista silmään tarttui myös, että pyyntö oli tehty Ubuntu käyttöjärjestelmällä Linuxilla Firefox selaimella. Tunnistetta yrittäjällä ei ollut, sillä IP osoitteen jälkeen on pelkkä ``-``.
 ![Add file: Try](try-5.png)
