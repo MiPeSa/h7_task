@@ -8,7 +8,7 @@
 
 ## x) Karvinen Tero, First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
 
-- Artikkelissa on lista esimerkkejä yksityisen virtuaalisen palvelimen määrittelemisestä. 
+- Artikkelissa on lista esimerkkejä yksityisen virtuaalipalvelimen määrittelemisestä. 
 - Hyvien ja vahvojen salasanojen käyttämistä painotetaan vahvasti.
 - Virtuaalipalvelimia sekä verkkotunnuksia voi löytää usealta eri palveluntarjoajalta. Artikkelissa myös avataan hieman GitHub Education pakettia, joka tarjoaa opiskelijoille erilaisia etuja, esimerkiksi verkkotunnuksen hankkimiseen tai virtuaalipalvelimen vuokraamiseen.
 - Artikkelissa kerrotaan ohjeita virtuaalipalvelimen perustamiseen
