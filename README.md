@@ -51,7 +51,7 @@ Siirryin hallinnoimaan virtuaalipalvelinta virtuaalikoneelleni komentokehotteen 
 
 ![Add file: Verkkosivu](sivu-alku.PNG)
 
-- Laitoin micron default editoriksi .bashrc tiedostoon. Kirjoitin ``export EDITOR='micro'`` ``.bashcr`` tiedoston loppuun. 
+- Laitoin micron default editoriksi .bashrc tiedostoon. Kirjoitin ``export EDITOR='micro'`` ``.bashcr`` tiedoston loppuun, jonka jälkeen otin muutoksen käyttöön komennolla ``source .bashrc``. 
 - Loin uuden .conf tiedoston uudelle etusivulle apache2 ``sites-available`` kansioon komennolla ``$ sudoedit /etc/apache2/sites-available/frontpage.conf``
 
 ![Add file: Etusivu](html-fp.png)
@@ -72,3 +72,15 @@ Testasin vielä toisella laitteella verkkoselaimella:
 ![Add file: Etusivu toisella laitteella](etusivu-2.PNG)
 
 - Uusi etusivuni on nyt siis virtuaalipalvelimella kaikkien nähtävissä: http://139.144.73.215/
+
+## d)
+
+![Add file: Try](try-1.png)
+
+![Add file: Try](try-2.png)
+
+![Add file: Try](try-3.png)
+
+![Add file: Try](try-4.png)
+
+![Add file: Try](try-5.png)
