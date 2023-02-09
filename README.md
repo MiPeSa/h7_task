@@ -23,6 +23,9 @@ Siirryin hallinnoimaan virtuaalipalvelinta virtuaalikoneelleni komentokehotteen 
     
 - Suoritin komentokehotteessa komennon ``$ sudo apt-get update``, joka tarjoaa saatavilla olevat pävitykset. Sen jälkeen asensin päivitykset, sekä samalla palomuurin komennolla ``$ sudo apt-get install ufw`` 
 - Tein ensin reiän SSH varten portille 22 komennolla ``$ sudo ufw allow 22/tcp``, jonka jälkeen pistin palomuurin päälle komennolla ``sudo ufw enable``
+
+![Add file: ufw enabled](ufw-enabled.png)
+
 - Tein uuden käyttäjän root käyttäjän tilalle. Aloitin uuden käyttäjän tekemisen komennolla ``$ sudo adduser miikka``, syötin salasanan käyttäjälle ja ``Full Name:`` kohtaan syötin nimeni. Muut kohdat jätin tyhjäksi painamalla ``Enter``. 
 - Annoin juuri luomalleni käyttäjälle sudo käyttäjän oikeudet komennolla ``sudo adduser miikka sudo``. Lähdin testaamaan toimiiko juuri luomani käyttäjä ja sudo komennot enne root käyttäjän lukitsemista.
 - Avasin uuden komentokehotteen ja kirjauduin käyttäjälläni virtuaalipalvelimelle komennolla ``$ ssh miikka@'ip_osoite'``. Syötin salasanan ja pääsin sisään.
