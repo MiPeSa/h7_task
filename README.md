@@ -7,7 +7,19 @@ b) Tee alkutoimet omalla virtuaalipalvelimellasi: tulimuuri päälle, root-tunnu
 c) Asenna weppipalvelin omalle virtuaalipalvelimellesi. Korvaa testisivu. Kokeile, että se näkyy julkisesti. (Muista tehdä reikä tulimuuriin).
 d) Etsi merkkejä murtautumisyrityksistä.
 
-## x)
+## x) Karvinen Tero, First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
+
+- Artikkelissa on lista esimerkkejä yksityisen virtuaalisen palvelimen määrittelemisestä. 
+- Hyvien ja vahvojen salasanojen käyttämistä painotetaan vahvasti.
+- Virtuaalipalvelimia sekä verkkotunnuksia voi löytää usealta eri palveluntarjoajalta. Artikkelissa myös avataan hieman GitHub Education pakettia, joka tarjoaa opiskelijoille erilaisia etuja, esimerkiksi verkkotunnuksen hankkimiseen tai virtuaalipalvelimen vuokraamiseen.
+- Artikkelissa kerrotaan ohjeita virtuaalipalvelimen perustamiseen
+   - Uuden virtuaalipalvelimen luominen (Artikkelissa Digital Oceaniin)
+   - Palomuurin asentaminen sekä käyttöönottaminen
+   - Uuden sudo käyttäjän luominen ja sen testaaminen
+   - Root käyttäjän lukitseminen uuden käyttäjän luomisen jälkeen
+   - Sovellusten päivittäminen. Vanhoissa paketeissa voi olla haavoittuvaisuuksia, joka on turvallisuusriski.
+   - Virtuaalipalvelimen käyttämisen aloittaminen esimerkiksi julkisen palvelimen Apachen kautta.
+   - Julkisen DNS nimen hankkiminen IP osoitteen tilalle.(Artikkelissa NameCheapista). 
 
 ## a)
 
@@ -94,3 +106,8 @@ Etsin merkkejä ``auth.log`` lokista murtautumisyrityksistä komennolla ``$ sudo
 - Tässä tapahtumassa, joku yritti IP osoitteesta ``185.246.220.98`` lähettää ``POST`` pyynnön ``/boaform/admin/formLogin`` verkkosivulleni. Tiedän, ettei kyseinen IP osoite ole minun ja muut lokin tapahtumat olivat minun aiheuttamia. POST pyyntö, kuitenkin aiheutti errorin ``404``, kuten lokista näkyy. Lokista silmään tarttui myös, että pyyntö oli tehty Ubuntu käyttöjärjestelmällä Linuxilla Firefox selaimella. Tunnistetta yrittäjällä ei ollut, sillä IP osoitteen jälkeen on pelkkä ``"-"``.
 
 ![Add file: Try](try-5.png)
+
+
+## Lähteet
+
+Karvinen Tero 2017, First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS, Luettavissa: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
